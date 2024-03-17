@@ -44,7 +44,7 @@ function addThreeValues(arg1, arg2, arg3){
     console.log("Addition is :",add); 
 }
 addThreeValues(10.23, 600, 40);
-addThreeValues(" Hello", " Good", " Morning");
+addThreeValues(" Hello", " Good", "Morning");
 
 
 

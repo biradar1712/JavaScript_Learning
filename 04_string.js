@@ -32,8 +32,26 @@ var indexOfS = Name.indexOf('s');
 console.log("IndexOf char s is:", indexOfS);
 
 
-console.log("==========Concatinating==========");
+console.log("==========Concatinating()==========");
 var Firstname = "Vaishnavi";
 var Lastname = " Biradar";
 var nameConcat = Firstname.concat(Lastname);
 console.log("The concatinated name is:",nameConcat);
+
+
+console.log("==========replace()==========");
+var greet = "Good Morning";
+const afterReplace = greet.replace("Morning","Afternoon");
+console.log(`After replace string is : ${afterReplace}`);
+
+console.log("==========toUpperCase()==========");
+var greet = "Good Morning";
+var greetoUpperCase = greet.toUpperCase();
+console.log(`${greet} in upper case is: ${greetoUpperCase}`);
+
+
+
+console.log("==========trim()==========");
+var sen = "sssssss Trim both sides sssss ";
+var senTrim = sen.trim();
+console.log(`After trimming it will be : ${senTrim}`);
