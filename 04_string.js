@@ -52,6 +52,79 @@ console.log(`${greet} in upper case is: ${greetoUpperCase}`);
 
 
 console.log("==========trim()==========");
-var sen = "sssssss Trim both sides sssss ";
-var senTrim = sen.trim();
-console.log(`After trimming it will be : ${senTrim}`);
+
+var greet = "   Good Morning   ";
+var lengthBeforeTrim = greet.length;
+console.log(`${greet} its length is :${lengthBeforeTrim}`);
+
+var greetAfterTrim = greet.trim;
+var lengthAfterTrim = greetAfterTrim.length;
+console.log(`${greetAfterTrim} its length is ${lengthAfterTrim}`);
+
+console.log(`Total spaces removed is : ${lengthBeforeTrim- lengthAfterTrim}`);
+
+console.log("======================================");
+
+var greet = "   Vaishnavi Biradar   ";
+var lengthBeforeTrim = greet.length;
+console.log(`${greet} its length is : ${lengthBeforeTrim}`);
+
+var greetAfterTrim = "greet.trim";
+var lengthAfterTrim = greetAfterTrim.length;
+console.log(`${greetAfterTrim} its length is ${lengthAfterTrim}`);
+console.log(`Total spaces removed is : ${lengthBeforeTrim-lengthAfterTrim}`);
+
+
+console.log("==========includes()==========");
+
+var greet = "Good Morning";
+var result =greet.includes("Mor");
+console.log(`Is string "${greet}" includes the word or char Mor in :${result}`);
+
+
+
+console.log("==========search()============");
+
+var greet = "Good Morning";
+var result = greet.search("Morning");
+console.log(`"Morning" is available in ${result}`);
+
+var result = greet.search("God");
+console.log(`God is available in ${result}`);
+
+
+console.log("==========slice()=========="); //it gives a perticular portion or section of a string.
+ 
+var greet = "Good Morning";
+var result = greet.slice(3,4);
+console.log(`Slice is ${result}`);
+var greet = "Good Morning";
+var result = greet.slice(3,7);
+console.log(`Slice is ${result}`);
+
+
+console.log("==========slipt()=========");
+ var greet = "Good Morning";
+ var resultValue = greet.split(" ");
+ console.log(resultValue);
+ console.log(`Total words are ${resultValue.length}`);
+
+
+console.log("=========================================");
+
+
+
+ console.log("WAF with name totalWord() with one argument");
+
+ function totalWord(sentence){
+    var sentence = sentence.split(" ");
+    var totalWords = sentence.length;
+    return totalWords 
+ }
+
+ var totalWords = totalWord("I am happy buddy");
+ console.log(`"I am happy buddy" total number of words are ${totalWords}`);
+
+ var totalWords = totalWord("I am learning Javascript the language of internet")
+ console.log(`"I am learning Javascript the language of internet" total numbers of words are ${totalWords}`);
+ 
