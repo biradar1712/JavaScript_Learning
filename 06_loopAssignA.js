@@ -24,14 +24,17 @@ console.log(`sum of cube is :${sum}`);
 
 console.log(`---------------3-------------`);
 
-function oddPositionedChars(word){
-    for (let index = 0; index < word.length; index++) {
-        const elemnt = word.charAt(index);
-        if (index%2!=0 && element !=" ") {
-            console.log(element);
-        }
-    }
-    
-}
-oddPositionedChars("Hard word always pays back");
+function oddpositionchar(string){
 
+    for(let i=0; i<string.length; i++){
+        const element =  string.charAt(i);
+    if(i %2 !=0 &&  element !=" "){
+        console.log(element);
+     }
+  }
+
+}
+oddpositionchar("Hard Word Always pays Back");
+
+console.log(`String 2`);
+oddpositionchar("Soon I Will be UI IT Champ");
