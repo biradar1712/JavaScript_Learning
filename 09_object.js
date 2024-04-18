@@ -44,6 +44,39 @@ const bankSbi = {
        console.log(`Bank Details`);
        console.log(`Name: ${this.name}, City: ${this.city}, totalStaff: ${this.totalStaff}, Home Loan ROI: ${this.homeLoanROI} `);
     },
-    amountToPay:
+    //amountToPay: function (amount){
+     //   return amount* 9.5;
+    //}
+     
 }
 bankSbi.bankDetails();
+//const amountToPayable = person.amountToPay(50000);
+
+
+console.log(`=====Nested Object=====`);
+const jennyPerson ={
+    name : "Jenny",
+    age : 25,
+    country : "USA",
+     address :{
+        flatNo : 102,
+        flootNumber : 3,
+        street : "Bergen road",
+        city : "LA",
+        state : "ABC",
+        getAddress : function(){
+            const address = `Flat Number: ${this.flatNo}, Floor Number: ${this.flootNumber}, Stree:${this.street}, City:${this.city},State: ${this.state}` ;
+            return address; 
+        }
+        
+     }
+}
+console.log(`Type of jennyPerson : ${typeof jennyPerson}`);
+console.log(`Type of adress : ${typeof address}`);
+
+console.log(`City : ${jennyPerson.address.city}`);
+jennyPerson.address.state = "XYZ"  //updated value
+
+console.log(`==========Jenny complete address to courier=========`);
+const jennyAddress = jennyPerson.address.getAddress();
+console.log(jennyAddress);
