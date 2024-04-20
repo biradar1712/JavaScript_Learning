@@ -1,28 +1,35 @@
-let professor = {
-    name: "Sanjana",
-    city: "Mumbai",
-    college: "VIIT",
-    department: "Computer Science",
-    subjectAssigned: "Angular",
-    degrees: {
-        juniorCollege: "Science",
-        engineering: "CSC",
-        masters: "M-Tech",
-        PHD: "Adv Computing"
-    },
-    certificates: [
-        'Hacker Rank participation', 
-        'Certificate in IFE course', 
-        'Certificate in Adv Programming'
-    ]
+class Vechicle {
+    
+    constructor(vechicleName, vechicleNumber, vechicleType, vechicleRegistrationDate, vechicleColour) {
+        this.vechicleName = vechicleName;
+        this.vechicleNumber = vechicleNumber;
+        this.vechicleType = vechicleType;
+        this.vechicleRegistrationDate = vechicleRegistrationDate;
+        this.vechicleColour = vechicleColour;
+    }
+    details() {
+        // console.log(Vechicle Details => Name : ${this.vechicleName}, Number : ${this.vechicleNumber}, Type : ${this.vechicleType}, RegistrationDate :${this.vechicleRegistrationDate}, Colour : ${this.vechicleColour});
+        
+        console.log("----------------------------------------------------");
+        console.log(`Name : ${this.vechicleName}`);
+        console.log(`Number : ${this.vechicleNumber}`);
+        console.log(`Type Of Vechicle : ${this.vechicleType}`);
+        console.log(`Resistration Date : ${this.vechicleRegistrationDate}`);
+        console.log(`Colour : ${this.vechicleColour}`);
+    }
 }
+const tvs = new Vechicle("Jupyter",41852,"TvsScooty","20/01/2023","Grey");
+//tvs.details();
+const honda = new Vechicle("Activa",45896,"HondaScooty","22/10/2020","White");
+//honda.details();
+const enfield = new Vechicle("Royal Enfield",56201,"EnfieldBike","18/03/2019","Black");
+//enfield.details();
+const mahindra = new Vechicle("Jawa",14140,"MahindraBike","15/02/2018","Red-Black");
+//mahindra.details();
+const yamaha = new Vechicle("Fascino",181512,"Yamaha","12/11/2021","Blue");
+//yamaha.details();
 
-
-console.log(`1.Properties given in Object Professor are : `);
-console.log(professor);
-
-console.log(`2.Include Nested object degrees :`);
-console.log(professor.degrees);
-
-console.log(`3.Add Array :`);
-console.log(professor.certificates);
+const arrayOfVechicles = [tvs, honda, enfield, mahindra, yamaha];
+for (const element of arrayOfVechicles) {
+    element.details();
+}

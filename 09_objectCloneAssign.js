@@ -19,7 +19,7 @@ const bankLocation = {
 const cloneObject = Object.assign(bankSbi,bankLocation);
 console.table(cloneObject);
 
-console.log(`4.Create the rateOfInterest`);
+console.log(`4.Create object rateOfInterest`);
 const rateOfInterest = {
     homeLoanInterest: 5.5,
     personalLoanInterest: 12.4,
